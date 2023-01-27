@@ -29,6 +29,7 @@ const Navigation = ()=>{
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                margin-left: 492px;
             }
             listItems:nth-child(1){
                 margin-left: 108px;

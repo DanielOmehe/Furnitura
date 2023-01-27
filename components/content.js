@@ -30,17 +30,21 @@ const Content = ()=>{
                     <div className="banner2">
                         <img src="/images/furniture.png" alt="furniture" />
                     </div>
+                    <img src='/images/path.svg' alt='path' className="path" />
                 </Column>
-                <Column variant='column3'></Column>
+                <Column variant='column3'>
+                    <div className="banner3">
+                        <img src="/images/vase.png" alt="furniture" />
+                    </div>
+                </Column>
             </div>
             <style jsx> {`
             .content{
-                height: 100%;
+                height: 120vh;
                 width: 100%;
-                display: grid;
-                grid-template-column: 500px auto 400px;
-                position: relative;
-                top: -90px;
+                display: flex;
+                position: absolute;
+                top: 0;
                 left: 0;
                 z-index: 1;
             }
@@ -54,12 +58,36 @@ const Content = ()=>{
             .banner1{
                 position: absolute;
                 top: 73%;
-                left: 515px;
+                left: 520px;
             }
             .banner2{
                 top: 498px;
-                left: 59px;
+                left: 115px;
                 position: absolute;
+                z-index: 2;
+            }
+            .banner3{
+                width: 230px;
+                height: 700px;
+                position: absolute;
+                border-right: 2px solid #DFE7F2;
+                left: 57px;
+                top: 298px;
+                z-index: 2;
+            }
+            .banner3::before{
+                height: 85px;
+                width: 100px;
+                left: 230px;
+                top: 1700px;
+                position: absolute;
+                background: #DFE7F2;
+            }
+            .path{
+                position: absolute;
+                top: 396px;
+                z-index: 1;
+                left: 152px;
             }
             `} </style>
         </Fragment>
