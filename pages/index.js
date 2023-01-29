@@ -1,11 +1,26 @@
-import { Fragment } from 'react'
-import Header from '../components'
+import HeaderComponent from "../components/header"
+import ContentComponent from "../components/content"
 
 const Home = ()=>{
     return(
-        <Fragment>
-            <Header />
-        </Fragment>
+        <>
+            <div className="container">
+                <HeaderComponent />
+                <ContentComponent />
+            </div>
+            <style jsx>
+                {
+                    `
+                        .container{
+                            width: 100%;
+                            max-height: 100vh;
+                            background: #ffffff;
+                            overflow-y: hidden;
+                        }
+                    `
+                }
+            </style>
+        </>
     )
 }
 

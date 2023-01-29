@@ -1,8 +1,6 @@
-import { Fragment } from "react";
-
 const Text = ({variant, children})=>{
     return(
-        <Fragment>
+        <>
             <p className={variant}>{children}</p>
             <style jsx>{`
             .column-text{
@@ -13,11 +11,11 @@ const Text = ({variant, children})=>{
                 position: absolute;
                 left: 184px;
                 font-size: 14px;
-                top: 800px;
+                top: 600px;
                 transform: rotate(-90deg);
             }
             `}</style>
-        </Fragment>
+        </>
     )
 }
 

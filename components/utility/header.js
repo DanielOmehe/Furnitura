@@ -1,8 +1,6 @@
-import { Fragment } from "react";
-
 const Header = ({variant, children})=>{
     return(
-        <Fragment>
+        <>
             <h3 className={variant}> {children} </h3>
             <style jsx>{`
                 .column-head{
@@ -15,7 +13,7 @@ const Header = ({variant, children})=>{
                     margin-bottom: 32px;
                 }
             `}</style>
-        </Fragment>
+        </>
     )
 }
 
