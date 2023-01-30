@@ -8,10 +8,11 @@ const Content = ()=>{
     const [loading, setLoading] = useState(false)
 
     const handleClick = ()=>{
+        if(loading) return null
         setLoading(true)
         setInterval(() => {
             setLoading(false)
-        }, 15000);
+        }, 2000);
     }
     return(
         <>
@@ -75,12 +76,12 @@ const Content = ()=>{
                 .banner1{
                     position: absolute;
                     top: 62%;
-                    left: 520px;
+                    left: 501px;
                 }
                 .banner2{
                     height: 587px;
                     width: 286px;
-                    left: 112px;
+                    left: 90px;
                     top: 295px;
                     border-radius: 0px;                    
                     position: absolute;
@@ -104,13 +105,13 @@ const Content = ()=>{
                 .spinner{
                     width: 30px;
                     height: 30px;
-                    border: 3px solid white;
+                    border: 3px solid #ababab;
                     border-radius: 50px;
                     position: absolute;
-                    top: 253px;
-                    left: 60px;
-                    border-right: 3px solid transparent;
-                    animation: spinner 1s linear infinite;
+                    top: 250px;
+                    left: 65px;
+                    border-top: 3px solid #fff;
+                    animation: spinner 1s ease-in-out infinite;
                 }
                 @keyframes spinner{
                     100%{
@@ -119,7 +120,7 @@ const Content = ()=>{
                 }
             `} </style>
         </>
-    )
+        )
 }
 
 export default Content

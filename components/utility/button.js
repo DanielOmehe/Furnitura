@@ -4,6 +4,7 @@ const Button = ({variant, children, onClickHandler, state})=>{
             <button className={variant} onClick={onClickHandler}> {children} </button>
             <style jsx>{`
                 .discover{
+                    display: ${state ? 'none' : 'block'};
                     background: #D16A1D;
                     height: 50px;
                     width: 157px;
@@ -14,9 +15,6 @@ const Button = ({variant, children, onClickHandler, state})=>{
                     border-radius: 32px;
                     box-shadow:  0px 0px 30px 10px rgba(209, 106, 29, 0.24);
                     border: 1px solid transparent;
-                }
-                .discover::before{
-                    width: 100
                 }
                 .scroll{
                     height: 81px;

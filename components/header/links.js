@@ -3,7 +3,7 @@ const links = [
     {name: 'Furniture', target: '/furniture'},
     {name: 'Our Services', target: '/services'},
     {name: 'Blog', target: '/blog'},
-]
+];
 
 const Links = ()=>{
     return(
@@ -33,4 +33,4 @@ const Links = ()=>{
     )
 }
 
-export default Links    
+export default Links

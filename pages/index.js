@@ -13,7 +13,7 @@ const Home = ()=>{
                     `
                         .container{
                             width: 100%;
-                            max-height: 100vh;
+                            height: 100%;
                             background: #ffffff;
                             overflow-y: hidden;
                         }
