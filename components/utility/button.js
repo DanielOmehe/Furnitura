@@ -15,6 +15,8 @@ const Button = ({variant, children, onClickHandler, state})=>{
                     border-radius: 32px;
                     box-shadow:  0px 0px 30px 10px rgba(209, 106, 29, 0.24);
                     border: 1px solid transparent;
+                    font-size: 18px;
+                    font-weight: 300;
                 }
                 .scroll{
                     height: 81px;
